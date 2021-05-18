@@ -20,7 +20,7 @@
         >  
           {{mail}}
         </li>
-        <li v-if="caricamento">
+        <li v-if="mails.length === 10 ? '':'caricamento'">
             caricamento.....
         </li>
       </ul>

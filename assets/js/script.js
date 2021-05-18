@@ -23,7 +23,8 @@ const app = new Vue({
         if(this.mails.length < 10){
           this.chiamata(url)
         }
-      }) 
+        this.caricamento = false;
+      })
       .catch((error) => {
         console.log(error);
       })
