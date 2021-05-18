@@ -3,7 +3,6 @@ const app = new Vue({
   data: {
 
     mails:[],
-    caricamento: true
 
   },
   created(){
@@ -23,7 +22,6 @@ const app = new Vue({
         if(this.mails.length < 10){
           this.chiamata(url)
         }
-        this.caricamento = false;
       })
       .catch((error) => {
         console.log(error);

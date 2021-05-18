@@ -14,13 +14,13 @@
 
       <ul>
         <li 
-            v-if="mails.length === 10 ? '!caricamento':''"
+            v-if="mails.length === 10"
             v-for="mail in mails"
             
         >  
           {{mail}}
         </li>
-        <li v-if="mails.length === 10 ? '':'caricamento'">
+        <li v-if="mails.length === 10 ? '':'null'">
             caricamento.....
         </li>
       </ul>
