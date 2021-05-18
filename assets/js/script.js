@@ -18,12 +18,11 @@ const app = new Vue({
 
     chiamata(url){
       axios.get(url)
-      .then((change) => {
-        this.mails.push(change.data.response)
+      .then((res) => {
+        this.mails.push(res.data.response)
         if(this.mails.length < 10){
           this.chiamata(url)
         }
-        this.caricamento = false;
       })
       .catch((error) => {
         console.log(error);
