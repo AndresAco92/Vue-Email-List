@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js' integrity='sha512-nIRfPi8pZLpV/S3gWksT3zaVQ29AiENGYRUfyGV3WLMXmJ+1sim8yroCaspNU88cQmbMfuqQMqlM8Bggg+tFgw==' crossorigin='anonymous'></script>
+  <title>Email</title>
+</head>
+<body>
+  <div id="root">
+
+    <div >
+
+      <ul>
+        <li 
+            v-if="mails.length === 10"
+            v-for="mail in mails"
+            
+        >  
+          {{mail}}
+        </li>
+        <li v-if="caricamento">
+            caricamento.....
+        </li>
+      </ul>
+  
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
