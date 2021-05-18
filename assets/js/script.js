@@ -23,7 +23,7 @@ const app = new Vue({
         if(this.mails.length < 10){
           this.chiamata(url)
         }
-      })
+      }) 
       .catch((error) => {
         console.log(error);
       })
